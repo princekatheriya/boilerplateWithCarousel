@@ -10,7 +10,7 @@ var settings = {
 };
 var settings2 = {
   dots: false,
-  infinite: false,
+  infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,

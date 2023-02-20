@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactSlickCenterMode from "react-slick";
+import "./style.css";
 import "./../index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,20 +22,20 @@ const Home = () => {
   console.log("items", items);
   return (
     <div>
-      <div style={{ display: "flex" }}>
-        <div style={{ width: "68%" }}>
+      <div className="displayContainer">
+        <div className="carousel" style={{}}>
           <ReactSlickCenterMode {...settings}>
             <div>
-              <img src="http://placekitten.com/g/800/350" />
+              <img alt="sample" src="http://placekitten.com/g/800/350" />
             </div>
             <div>
-              <img src="http://placekitten.com/g/800/350" />
+              <img alt="sample" src="http://placekitten.com/g/800/350" />
             </div>
             <div>
-              <img src="http://placekitten.com/g/800/350" />
+              <img alt="sample" src="http://placekitten.com/g/800/350" />
             </div>
             <div>
-              <img src="http://placekitten.com/g/800/350" />
+              <img alt="sample" src="http://placekitten.com/g/800/350" />
             </div>
           </ReactSlickCenterMode>
           <div
@@ -47,7 +48,6 @@ const Home = () => {
               color: "#fff",
               backgroundColor: "pink",
               alignSelf: "center",
-              justifyContent: "center",
               marginLeft: "auto",
               marginRight: "auto",
               marginTop: "50px",
@@ -57,8 +57,8 @@ const Home = () => {
           </div>
         </div>
         <div
+          className="vertical_slider"
           style={{
-            width: "29%",
             height: "506px",
             color: "green",
             backgroundColor: "red",
@@ -91,22 +91,22 @@ const Home = () => {
           <h3>Trending</h3>
           <ReactSlickCenterMode {...settings2}>
             <div>
-              <img src="http://placekitten.com/g/295/195" />
+              <img alt="sample" src="http://placekitten.com/g/295/195" />
             </div>
             <div>
-              <img src="http://placekitten.com/g/295/195" />
+              <img alt="sample" src="http://placekitten.com/g/295/195" />
             </div>
             <div>
-              <img src="http://placekitten.com/g/295/195" />
+              <img alt="sample" src="http://placekitten.com/g/295/195" />
             </div>
             <div>
-              <img src="http://placekitten.com/g/295/195" />
+              <img alt="sample" src="http://placekitten.com/g/295/195" />
             </div>
             <div>
-              <img src="http://placekitten.com/g/295/195" />
+              <img alt="sample" src="http://placekitten.com/g/295/195" />
             </div>
             <div>
-              <img src="http://placekitten.com/g/295/195" />
+              <img alt="sample" src="http://placekitten.com/g/295/195" />
             </div>
           </ReactSlickCenterMode>
         </div>
